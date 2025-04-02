@@ -1,8 +1,16 @@
+import { getProducts } from '@/entities/product/api/get-products';
+
 import { ProductPage } from '@/pages/product';
 
 interface Props {
   params: Promise<{ id: number }>;
 }
+
+export const generateStaticParams = async () => {
+  const products = await getProducts();
+
+  return products.data.map((product) => ({ product: product.title }));
+};
 
 export const generateMetadata = async ({ params }: Props) => {
   const id = (await params).id;
