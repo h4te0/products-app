@@ -23,7 +23,7 @@ const CreateProductPage = () => {
   } = useForm<TFormCreateProductValues>({
     resolver: zodResolver(createProductSchema),
     defaultValues: {
-      image: '/placehodler.webp',
+      image: 'https://h4te0.github.io/products-app/placeholder.webp',
     },
   });
 
