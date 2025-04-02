@@ -20,7 +20,7 @@ export const ProductCard = ({
   return (
     <div className="p-4 rounded-lg hover:shadow-lg drop-shadow-2xl ease-in-out duration-300 cursor-pointer">
       <Image
-        src={image || '/placehodler.webp'}
+        src={image || 'https://h4te0.github.io/products-app/placeholder.webp'}
         alt={title}
         width={600}
         height={600}

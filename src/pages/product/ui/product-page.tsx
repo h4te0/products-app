@@ -61,7 +61,7 @@ const ProductPage = ({ id }: Props) => {
       <p className="font-bold text-2xl text-gray-600">{product?.price} $</p>
       <div className="flex gap-10 justify-between mt-4 max-tablet:flex-col">
         <Image
-          src={product?.image || '/placeholder.webp'}
+          src={product?.image || 'https://h4te0.github.io/products-app/placeholder.webp'}
           alt={product?.title}
           width={600}
           height={600}
