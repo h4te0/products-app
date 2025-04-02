@@ -9,7 +9,7 @@ interface Props {
 export const generateStaticParams = async () => {
   const products = await getProducts();
 
-  return products.data.map((product) => ({ product: product.title }));
+  return products.data.map((product) => ({ id: product.id }));
 };
 
 export const generateMetadata = async ({ params }: Props) => {
